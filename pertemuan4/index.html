@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Coding JS – Edu Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <h1>JavaScript Mastery By Rumah IT</h1>
+        <p>PAKSA - TERBIASA - BISA - LUARBIASA </p>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="container">
+        
+        <!-- === BUTTONS AREA === -->
+        <section class="box" id="buttons-section">
+            <h2>Function Trigger Buttons</h2>
+            <button class="icon-btn icon" onclick="clearOutput()" title="Clear Output">🗑️</button>
+            <button class="icon-btn icon" onclick="addNewPharaghraph()" title="Add New Line">➕</button>
+            <!-- Tambahkan tombol lainnya sesuai materi -->
+            <br><br>
+
+            <div>
+                <button class="icon-btn" onclick="f1()" title="Toggle Modal">F1</button>
+                <button class="icon-btn" onclick="togglePopup('2')" title="Input Nama & Alamat">F2</button>
+                <button class="icon-btn" onclick="togglePopup('3')" title="Hoby & Favorit">F3</button>
+                <button class="icon-btn" onclick="togglePopup('4')" title="Makanan & Minuman">F4</button>
+                <button class="icon-btn" onclick="togglePopup('5')" title="Merek Hp & Laptop">F5</button>
+                <button class="icon-btn" onclick="togglePopup('6')" title="Tempat Favorit">F6</button>
+                <button class="icon-btn" onclick="togglePopup('7')" title="Motor Impian">F7</button>
+                <button class="icon-btn" onclick="togglePopup('8')" title="Rumah Impian">F8</button>
+                <button class="icon-btn" onclick="togglePopup('9')" title="Rumah Impian">F9</button>
+                <button class="icon-btn" onclick="togglePopup('10')" title="Rumah Impian">F10</button>
+                <!-- Tambahkan tombol lainnya sesuai materi -->
+            </div>
+        </section>
+
+        <!-- === OUTPUT AREA === -->
+        <section class="box" id="output-section">
+            <h2>Output / Result</h2>
+            <div id="outputBox"></div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>Made for Programming Classs Batch 23  | EL Course &copy; 2025</p>
+    </footer>
+
+
+
+    <!-- ===== MODAL / NOTIFICATION POPUP ===== -->
+    
+    <div id="popupModal1" class="modal hidden">
+
+        <div class="modal-content">
+            <span class="close-btn" onclick="togglePopup('1')">&times;</span>
+            <section id="form-section">
+                <h2>Input Data</h2>
+                <form id="F1">
+
+                    <label for="firstNumber">Angka Pertama:</label>
+                    <input type="number" id="firstNumber" name="firstNumber" placeholder="Masukkan Angka Pertama" required />
+
+                    <label for="secondNumber">Angka Kedua:</label>
+                    <input type="number" id="secondNumber" name="secondNumber" placeholder="Masukkan Angka Kedua" required />
+
+                    <label for="operator">Operator:</label>
+                    <input type="text" id="operator" name="operator" placeholder="Masukkan Operator penjumlahan" required />
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+
+    <div id="popupModal2" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" onclick="togglePopup('2')">&times;</span>
+            <section id="form-section">
+                <h2>Input Data</h2>
+                <form id="F2">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required />
+
+                    <label for="alamat">Alamat:</label>
+                    <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat" required />
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+
+<div id="popupModal3" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="togglePopup('3')">&times;</span>
+    <section id="form-section">
+      <h2>Input Hobi & Favorit</h2>
+      <form id="F3">
+        <label for="Hoby">Hobi:</label>
+        <input type="text" id="Hoby" name="Hoby" placeholder="Masukkan hobi kamu" required />
+
+        <label for="Favorit">Favorit:</label>
+        <input type="text" id="Favorit" name="Favorit" placeholder="Masukkan hal favorit kamu" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+</div>
+
+
+<div id="popupModal4" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="togglePopup('4')">&times;</span>
+    <section id="form-section">
+      <h2>Input Makanan & Minuman Favorit</h2>
+      <form id="F4">
+        <label for="Makanan">Makanan:</label>
+        <input type="text" id="Makanan" name="Makanan" placeholder="Makanan Favorit kamu" required />
+
+        <label for="Minuman">Minuman:</label>
+        <input type="text" id="Minuman" name="Minuman" placeholder="Minuman Favorit kamu" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+</div>
+
+
+<div id="popupModal5" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="togglePopup('5')">&times;</span>
+    <section id="form-section">
+      <h2>Input Laptop & Hp Yang Di Gunakan</h2>
+      <form id="F5">
+        <label for="laptop">Laptop:</label>
+        <input type="text" id="Laptop" name="laptop" placeholder="Laptop saya " required />
+
+        <label for="Hp">Hp:</label>
+        <input type="text" id="Hp" name="Hp" placeholder="Hp Saya" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+</div>
+
+<div id="popupModal6" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="togglePopup('6')">&times;</span>
+    <section id="form-section">
+      <h2>Input Tempat Favorit</h2>
+      <form id="F6">
+        <label for="Tempat">Laptop:</label>
+        <input type="text" id="tempatFavorit" name="tempatFavorit" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+</div>
+
+<div id="popupModal7" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="togglePopup('7')">&times;</span>
+    <section id="form-section">
+      <h2>Input Motor Impian</h2>
+      <form id="F7">
+        <label for="Tempat">Motor Impian:</label>
+        <input type="text" id="motorImpian" name="motorImpian" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+</div>
+
+
+<div id="popupModal8" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="togglePopup('8')">&times;</span>
+    <section id="form-section">
+      <h2>Input Rumah Impian</h2>
+      <form id="F8">
+        <label for="Tempat">Rumah Impian:</label>
+        <input type="text" id="RumahImpian" name="RumahImpian" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+</div>
+
+<div id="popupModal9" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="togglePopup('9')">&times;</span>
+    <section id="form-section">
+      <h2>Input Gunung Impian</h2>
+      <form id="F9">
+        <label for="gunungImpian">Gunung Impian:</label>
+        <input type="text" id="gunungImpian" name="gunungImpian" placeholder="Masukkan nama gunung impianmu" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+</div>
+
+<div id="popupModal10" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="togglePopup('10')">&times;</span>
+    <section id="form-section">
+      <h2>Input Negara Impian</h2>
+      <form id="F10">
+        <label for="negaraImpian">Negara Impian:</label>
+        <input 
+          type="text" 
+          id="negaraImpian" 
+          name="negaraImpian" 
+          placeholder="Masukkan nama negara impianmu" 
+          required 
+        />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+</div>
+
+
+    <!-- ===== JAVASCRIPT ===== -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
