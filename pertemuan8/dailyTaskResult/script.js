@@ -144,7 +144,7 @@ console.log(`Hasil Find (Mencari Angka Pertama yang Lebih dari 8) : ${findAngka}
 // Studi Kasus:
 // Buat program untuk memproses daftar nilai siswa:
 
-let nilai = [60,75,80,55,90,45];
+let nilai = [60,75,80,55,90,45,70,85,44,45,62,77];
 
 // 1. gunakan `filter()`untuk mencari nlai lulus(>= 70)
 let nilaiLulus = nilai.filter((v)=>{
@@ -161,21 +161,16 @@ let komentarNilai = nilai.map((v)=>{
         return v + " - Tidak Valid"
     }
 });
-console.log(`Komentar Nilai Siswa : ${komentarNilai}`);
 
 // 3. gunakan `reduce()` untuk menghitung total nilai
 let totalNilai = nilai.reduce((acc, curr) => {
     return acc + curr;
 });
-console.log(`Total Nilai Siswa : ${totalNilai}`);
 
-// 4. cetak hasilnya ke console
-console.table("Hasil Evaluasi Nilai Siswa:");
-console.table(`Daftar Nilai: ${nilai}`);
-console.table(`Nilai Lulus: ${nilaiLulus}`);
-console.table(`Komentar Nilai: ${komentarNilai}`);
-console.table(`Total Nilai: ${totalNilai}`);
-
+console.table("Hasil Evaluasi Nilai ");
+console.table(nilaiLulus);
+console.table(komentarNilai);
+console.table(totalNilai);
 // ================================================
 
 // Kasus 1: Membuat dan Mengakses Array Dasar
