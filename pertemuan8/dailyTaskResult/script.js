@@ -120,22 +120,22 @@ let angka = [1,2,3,4,5,6,7,8,9,10]
 angka.map((v,i,a)=>{
     a[i] = v * 5
 });
-console.log(`Hasil Map (Mengalikan Semua Angka dengan 5) : ${angka}`);
+console.table(angka);
 
 let angkaGenap = angka.filter((v)=>{
     return v % 2 === 0
 });
-console.log(`Hasil Filter (Mengambil Angka Genap) : ${angkaGenap}`);
+console.table(angkaGenap);
 
 let totalAngka = angka.reduce((acc, curr) => {
     return acc + curr;
 });
-console.log(`Hasil Reduce (Menjumlahkan Semua Angka) : ${totalAngka}`);
+console.table(totalAngka);
 
 let findAngka = angka.find((v) => {
     return v > 8;
 });
-console.log(`Hasil Find (Mencari Angka Pertama yang Lebih dari 8) : ${findAngka}`);
+console.table(findAngka);
 
 
 // ================================================
