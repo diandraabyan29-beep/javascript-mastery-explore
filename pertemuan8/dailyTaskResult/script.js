@@ -164,7 +164,7 @@ let komentarNilai = nilai.map((v)=>{
 
 // 3. gunakan `reduce()` untuk menghitung total nilai
 let totalNilai = nilai.reduce((a,b,c) => {
-    console.table(`A=${a}, B=${b}, C=${c}`)
+    console.log(`A=${a}, B=${b}, C=${c}`)
     return a + b;
 });
 
