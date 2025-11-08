@@ -163,14 +163,15 @@ let komentarNilai = nilai.map((v)=>{
 });
 
 // 3. gunakan `reduce()` untuk menghitung total nilai
-let totalNilai = nilai.reduce((acc, curr) => {
-    return acc + curr;
+let totalNilai = nilai.reduce((a,b,c) => {
+    console.table(`A=${a}, B=${b}, C=${c}`)
+    return a + b;
 });
 
 console.table("Hasil Evaluasi Nilai ");
 console.table(nilaiLulus);
-console.table(komentarNilai);
-console.table(totalNilai);
+
+
 // ================================================
 
 // Kasus 1: Membuat dan Mengakses Array Dasar
