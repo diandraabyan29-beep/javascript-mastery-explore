@@ -44,7 +44,7 @@ console.log("Daftar barang dengan total belanja lebih dari 500 ribu: ");
 belanjaDiatas500Ribu.forEach(a => console.log(`- ${a.namaBarang}`));
 console.log("\n");
 
-const totalSemuaBelanja = transaksi.reduce((total, item) => total + (item.jumlah * item.hargaSatuan0));
+const totalSemuaBelanja = transaksi.reduce((total, item) => total + (item.jumlah * item.hargaSatuan));
 
 console.log(`Total semua belanja: Rp${totalSemuaBelanja.toLocaleString('id-ID')}`);
 console.log("\n");
