@@ -123,5 +123,46 @@ console.table(semuaKey);
 // 🟡 MEDIUM (20 soal)
 
 // 16. Buat program absensi memakai callback validasi + penyimpanan localStorage.
+function validasi(nama, callback) {
+    if (!nama || nama.trim() === "") callback("Nama kosong!", null);
+    else callback(null, nama.trim());
+}
 
-// ==================================================================================
+function simpanAbsensi(nama) {
+    let data = JSON.parse(localStorage.getItem("absensi")) || [];
+    data.push({ nama, waktu: new Date().toLocaleString() });
+    localStorage.setItem("absensi", JSON.stringify(data));
+}
+
+function absen(nama) {
+    validasi(nama, (err, hasil) => {
+        if (err) return console.log(err);
+        simpanAbsensi(hasil);
+    });
+}
+
+
+// 17. Buat to-do list sederhana (add, list).
+function addTodo(text) {
+    let list = JSON.parse(localStorage.getItem("todo")) || [];
+    list.push({ text, done: false });
+    localStorage.setItem("todo", JSON.stringify(list));
+}
+
+function listTodo() {
+    return JSON.parse(localStorage.getItem("todo")) || [];
+}
+
+
+// 18. Buat fungsi edit item to-do pada indeks tertentu.
+function editTodo(index, newText){
+    let list = listTodo()
+    if (list[index]){
+        list[index].text = newText;
+        localStorage.setItem("todo", JSON.stringify(list))
+    }
+}
+
+// 19. Buat fungsi hapus item to-do.
+
+
