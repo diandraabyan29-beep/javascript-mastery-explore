@@ -70,6 +70,7 @@ save.addEventListener("click", () => {
 
 const photo = document.getElementById("photo")
 const btn3 = document.getElementById("change-photo")
+
 let toggle = false
 
 btn3.addEventListener("click", () => {
