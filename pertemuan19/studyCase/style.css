@@ -1,0 +1,161 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
+    color: #333;
+    padding: 20px;
+}
+
+/* Judul */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+/* Tombol */
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Input */
+input {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 250px;
+}
+
+/* Preview teks */
+#name-preview {
+    font-weight: bold;
+    color: #27ae60;
+    margin-left: 8px;
+}
+
+/* Paragraf */
+#decs {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 4px solid #3498db;
+}
+
+/* Counter */
+#count {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-left: 8px;
+}
+
+/* Task list */
+#task-list {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    background: #ecf0f1;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#task-list li:hover {
+    background: #d0e6f7;
+}
+
+/* Menu */
+#menu {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.menu-item {
+    list-style: none;
+    padding: 10px 15px;
+    background: #2ecc71;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    background: #27ae60;
+}
+
+/* Error & Result */
+#error {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Gambar */
+#photo {
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Status belajar */
+#status {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #8e44ad;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #3498db;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
