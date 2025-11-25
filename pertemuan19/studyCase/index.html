@@ -52,6 +52,74 @@
         <tbody id="tbody"></tbody>
     </table>
 
+    <p>Jumlah latihan hari ini:<span id="count">0</span></p>
+    <button id="btn-plus">Tambah Lathan</button>
+    <p id="msg"></p>
+
+    <h2>Todo list</h2>
+    <input id="todo-input" placeholder="Tugas-baru"/>
+    <button id="todo-add">Tambah</button>
+    <ul id="todo-list"></ul>
+
+    <h2>Daftar Santri</h2>
+    <input id="search" placeholder="Cari..." />
+    <ul id="santri-list">
+        <li>Ahmad</li>
+        <li>Bilal</li>
+        <li>Citra</li>
+        <li>Diandra</li>
+        <li>Fadhli</li>
+        <li>Fajar</li>
+        <li>Abdullah</li>
+        <li>Zaid</li>
+        <li>Amr</li>
+        <li>Ali</li>
+        <li>Umar</li>
+    </ul>
+     <p id="info"></p>
+
+    <div id="tabs">
+         <button data-tab="profil">Profil</button>
+         <button data-tab="kelas">Kelas</button>
+         <button data-tab="kontak">Kontak</button>
+    </div>
+
+    <div id="tab-content">
+         <div data-tab-content="profil">Ini Profil.</div>
+         <div data-tab-content="kelas" style="display:none;">Ini info kelas.</div>
+         <div data-tab-content="kontak" style="display:none;">Ini kontak.</div>
+    </div>
+
+    <div class="faq">
+         <div class="question">Apa itu DOM?</div>
+         <div class="answer" style="display:none;">DOM adalah representasi HTML di JS.</div>
+    </div>
+    <div class="faq">
+         <div class="question">Apa itu Event?</div>
+         <div class="answer" style="display:none;">Event adalah aksi (click, keyup, dll).</div>
+    </div>
+
+    <div id="rating">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    <p id="rating-text">Belum ada rating.</p>
+
+    <img id="main-img" src="img1.jpg" alt="Gambar 1" width="300" />
+<p id="caption">Gambar 1</p>
+
+<div id="thumbs">
+  <img class="thumb" src="img1.jpg" data-caption="Gambar 1" width="80" />
+  <img class="thumb" src="img2.jpg" data-caption="Gambar 2" width="80" />
+  <img class="thumb" src="img3.jpg" data-caption="Gambar 3" width="80" />
+</div>
+
+button id="theme-btn">Pakai Dark Mode</button>
+<h1>Halaman Belajar JS</h1>
+
     <script src="script.js"></script>
 </body>
 </html>
