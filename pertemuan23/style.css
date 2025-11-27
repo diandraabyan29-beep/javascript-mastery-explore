@@ -1,0 +1,121 @@
+/* ======== AREA GLOBAL ======== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 360px;              /* Diperbesar dari 320px */
+    background: white;
+    padding: 30px;             /* Lebih lega */
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.12);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #4a90e2;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background: #50c878;
+}
+
+.button-group a {
+    display: block;
+    margin: 12px 0;
+}
+
+/* ======== AREA TO DO LIST ======== */
+
+.todo-input {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#todoList {
+    padding: 0;
+    list-style: none;
+    margin-top: 12px;
+}
+
+#todoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #eaeaea;
+    padding: 15px;            /* Lebih besar */
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    font-size: 17px;          /* Diperbesar */
+}
+
+#todoList li span {
+    flex: 1;
+}
+
+.deleteBtn {
+    background: #ff4d4d;
+    border: none;
+    padding: 8px 14px;        /* Lebih besar */
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.deleteBtn:hover {
+    background: #e64545;
+}
+
+/* Membuat container lebih lebar */
+.container {
+    max-width: 420px;
+}
+
+/* Membesarkan input dan tombol To-Do */
+.todo-input input {
+    font-size: 16px;
+    height: 42px;
+}
+
+.todo-input button {
+    height: 42px;
+    font-size: 16px;
+}

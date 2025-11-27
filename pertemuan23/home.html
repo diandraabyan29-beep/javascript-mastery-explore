@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+</head>
+
+<body data-page="home">
+
+<div class="container">
+
+    <h1>Halo, <span id="userDisplay"></span>!</h1>
+    <p>To-Do List Anda</p>
+
+    <!-- Input To-Do -->
+    <div class="todo-input">
+        <input type="text" id="todoText" placeholder="Tambahkan tugas..." />
+        <button class="btn" id="addTodoBtn">Tambah</button>
+    </div>
+
+    <!-- List -->
+    <ul id="todoList"></ul>
+
+    <button class="btn logout-btn" id="logoutBtn">Logout</button>
+
+</div>
+
+</body>
+</html>
