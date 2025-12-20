@@ -20,3 +20,10 @@ export const formatDurasi = (detik) => {
 
     return `${formatter.format(jam)} jam ${formatter.format(menit)} menit ${formatter.format(detikSisa)} detik`;
 };
+
+export const hitungDiskon = (harga, diskon) =>
+  harga - (harga * diskon / 100)
+
+export const formatStok = (n) =>
+  n > 0 ? `Stok: ${n}` : "Stok Habis"
+

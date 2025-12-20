@@ -7,5 +7,3 @@ export * from './format.js';
 export * from './ui.js'
 
 // Nanti kalau ada file baru, tinggal tambah di sini.
-
-
