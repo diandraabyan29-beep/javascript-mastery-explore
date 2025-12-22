@@ -28,3 +28,4 @@ utils.renderBanyakKartu(wadahAplikasi, db.myProduct)
 console.log(utils.hitungDiskon(10000, 10))
 
 document.body.appendChild(utils.buatElemen('div',{style:'margin-top:40px;text-align:center;width:100%;',onClick: () => alert('Copyright 2024')},'Diandra Abyan Zahran'));
+

@@ -69,4 +69,3 @@ console.log("INI KODE LAIN HARUS JALAN MAU NGGK MAU");
 
 
 
-
